@@ -62,9 +62,9 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 textDate.setText("Loading..");
+                pickdate2();
                 pickdate1();
                 textDate.setText(textDate1 +  " - " + "Loading..");
-                pickdate2();
                 textDate.setText(textDate1 +  " - " + textDate2);
             }
         });
