@@ -8,9 +8,9 @@
 </p>
 <hr/>
 <p align="center">
-  <img src="https://badgen.net/badge/version/v1.1-alpha/blue" title="Current Version" alt="Current Version">
+  <img src="https://badgen.net/badge/version/v1.2-alpha/blue" title="Current Version" alt="Current Version">
   <img src="https://badgen.net/badge/build/alpha/grey" title="Build Status" alt="Build Status">
-  <img src="https://badgen.net/badge/progress/45%25/yellow" title="Progress" alt="Progress">                                                                                 
+  <img src="https://badgen.net/badge/progress/47%25/yellow" title="Progress" alt="Progress">                                                                                 
   <img src="https://badgen.net/github/last-commit/ArdityoCahyo/HotelSeeker" title="Last Commit" alt="Last Commit">                                                                 
 </p>
 
