@@ -32,7 +32,15 @@ HotelSeeker is an Android-based application using the FireBase Database. This pr
 
 ## Showcase
 
-### Coming Soon!
+### Screenshot
+
+#### Coming Soon!
+
+### UI/UX Design Plan
+
+<a href="https://www.figma.com/file/EBiIGRkfc9RZ8GmDlOPVD6/Hotel-Seeker-Mobile-Apps?node-id=0%3A1">
+  <img width="460" src="https://miro.medium.com/max/4800/1*nLFpCEBm5zmKR4Bvm5bi5w.png" title="HotelSeekers Figma" alt="HotelSeekers Figma"/>
+</a>
 
 ## Support
 
