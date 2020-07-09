@@ -33,7 +33,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 //                finish();
                 if(CheckNetwork.isInternetAvailable(SplashScreenActivity.this)) //returns true if internet available
                 {
-                    if (loadData() == "agreed"){
+                    if (loadData().contains("agreed")){
                         redirect();
                     }else{
                         saveData();
@@ -57,7 +57,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     public String loadData(){
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        final SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
 
         loadStatus = sharedPreferences.getString(status, "");
         return loadStatus;
