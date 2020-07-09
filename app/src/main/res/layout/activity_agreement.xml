@@ -44,11 +44,11 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:id="@+id/agree"
         android:layout_gravity="center|bottom"
         android:text="@string/button_agree"
         android:textColor="@android:color/white"
-        android:theme="@style/OrangeButton"/>
+        android:theme="@style/OrangeButton" />
 </FrameLayout>
 
