@@ -92,7 +92,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="MM DD - MM DD"
                                 android:textStyle="bold"
-                                android:textColor="@android:color/darker_gray"/>
+                                android:textColor="@color/colorAccent"/>
 
                         </LinearLayout>
 
@@ -132,7 +132,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Text Kamar"
                                 android:textStyle="bold"
-                                android:textColor="@android:color/darker_gray"/>
+                                android:textColor="@color/colorAccent"/>
 
                         </LinearLayout>
 
