@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "855791270553",
+    "firebase_url": "https://hotelseeker-b52a0.firebaseio.com",
+    "project_id": "hotelseeker-b52a0",
+    "storage_bucket": "hotelseeker-b52a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855791270553:android:794eb634195c1ffd3c1608",
+        "android_client_info": {
+          "package_name": "com.rplgdc.hotelseeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855791270553-ctph8q2hrn8gf7hgpc3a0na72f7nqnva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rplgdc.hotelseeker",
+            "certificate_hash": "2c1fe230e52c86a2a9b34d0505bbca34157642e4"
+          }
+        },
+        {
+          "client_id": "855791270553-ocfngfjooha92f9ee5hlnf649f0rert4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwdLFbOzJEVWZ-AnnK97yVmBvUilZndg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855791270553-ocfngfjooha92f9ee5hlnf649f0rert4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
