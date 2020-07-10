@@ -4,6 +4,7 @@
     package="com.rplgdc.hotelseeker">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NoInternetActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".OnBoardActivity" />
         <activity
             android:name=".SplashScreenActivity"
             android:noHistory="true"
@@ -19,6 +23,7 @@
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -40,6 +45,7 @@
         <activity
             android:name=".RoomActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
     </application>
+
 </manifest>
