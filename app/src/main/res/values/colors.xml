@@ -5,4 +5,5 @@
     <color name="colorAccent">#333333</color>
     <color name="colorBackground">#F5F5F5</color>
     <color name="destination_button">#EBECEE</color>
+    <color name="star">#FFC107</color>
 </resources>
