@@ -18,11 +18,15 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.rplgdc.hotelseeker.LoginActivity;
+import com.rplgdc.hotelseeker.MainActivity;
 import com.rplgdc.hotelseeker.R;
 import com.rplgdc.hotelseeker.RoomActivity;
 import com.rplgdc.hotelseeker.SearchActivity;
 
 import java.util.Calendar;
+
+import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 
 public class HomeFragment extends Fragment {
 
@@ -30,6 +34,7 @@ public class HomeFragment extends Fragment {
     private LinearLayout datePicker;
     private LinearLayout roomPicker;
     private Button searchButton;
+    private Button loginButton;
 
     private String textDate1;
     private String textDate2;
@@ -80,6 +85,15 @@ public class HomeFragment extends Fragment {
 
         searchButton = view.findViewById(R.id.search_button);
         searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent searchIntent = new Intent(getActivity(), SearchActivity.class);
+                startActivity(searchIntent);
+            }
+        });
+
+        loginButton = view.findViewById(R.id.login_button);
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent searchIntent = new Intent(getActivity(), SearchActivity.class);
@@ -275,6 +289,7 @@ public class HomeFragment extends Fragment {
 
 
 //    }
+
 
 
 }

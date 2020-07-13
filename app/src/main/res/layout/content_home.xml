@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:padding="@dimen/content_home_padding"
     tools:context=".ui.home.HomeFragment"
-    tools:showIn="@layout/content_scrolling">
+    tools:showIn="@layout/content_scrolling"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -25,5 +26,11 @@
             android:padding="15dp" />
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="auth"/>
 
 </LinearLayout>
