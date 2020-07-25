@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
     tools:context=".OnBoardActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp">
+
+        <ImageView
+            android:id="@+id/agreement_logo"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/logo_dark"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom">
+
+        <Button
+            android:id="@+id/facebookAuth"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Continue with Facebook"
+            android:textColor="@android:color/white"
+            android:theme="@style/FacebookButton"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textStyle="bold|normal"
+            android:typeface="sans"
+            android:paddingLeft="40dp"
+            android:paddingRight="60dp"
+            android:drawableLeft="@drawable/ic_facebook"/>
+
+        <Button
+            android:id="@+id/googleAuth"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Continue with Google"
+            android:theme="@style/GoogleButton"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textStyle="bold|normal"
+            android:typeface="sans"
+            android:paddingLeft="40dp"
+            android:paddingRight="60dp"
+            android:drawableLeft="@drawable/ic_google"/>
+
+        <Button
+            android:id="@+id/emailAuth"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Continue with Email"
+            android:textColor="@android:color/white"
+            android:theme="@style/EmailButton"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textStyle="bold|normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/terms_and_privacy"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+            android:text="@string/terms_and_privacy"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
