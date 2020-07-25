@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -45,8 +44,8 @@ public class SearchActivity extends AppCompatActivity {
     private void GetData(){
         Toast.makeText(getApplicationContext(),"Mohon Tunggu Sebentar...", Toast.LENGTH_LONG).show();
         reference = FirebaseDatabase.getInstance().getReference();
-//        reference.child("hotel").child(auth.getUid()).child("bandung")
-        reference.child("hotel").child("bandung")
+        reference.child("hotel").child(auth.getUid()).child("bandung")
+//        reference.child("hotel").child("bandung")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
