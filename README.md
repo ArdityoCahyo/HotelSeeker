@@ -8,9 +8,9 @@
 </p>
 <hr/>
 <p align="center">
-  <img src="https://badgen.net/badge/version/v1.2-alpha/blue" title="Current Version" alt="Current Version">
+  <img src="https://badgen.net/badge/version/v1.5-alpha/blue" title="Current Version" alt="Current Version">
   <img src="https://badgen.net/badge/build/alpha/grey" title="Build Status" alt="Build Status">
-  <img src="https://badgen.net/badge/progress/47%25/yellow" title="Progress" alt="Progress">                                                                                 
+  <img src="https://badgen.net/badge/progress/48%25/yellow" title="Progress" alt="Progress">                                                                                 
   <img src="https://badgen.net/github/last-commit/ArdityoCahyo/HotelSeeker" title="Last Commit" alt="Last Commit">                                                                 
 </p>
 
@@ -24,7 +24,7 @@ HotelSeeker is an Android-based application using the FireBase Database. This pr
 * minSdkVersion 21
 * targetSdkVersion 29
 * buildToolsVersion 29.0.3
-* gradleBuildToolsVersion 4.0.0
+* gradleBuildToolsVersion 4.0.1
 
 ### Installation
 * Min API Level 21      (Lollipop   5.0.x)
@@ -38,9 +38,11 @@ HotelSeeker is an Android-based application using the FireBase Database. This pr
 
 ### UI/UX Design Plan
 
-<a href="https://www.figma.com/file/EBiIGRkfc9RZ8GmDlOPVD6/Hotel-Seeker-Mobile-Apps?node-id=0%3A1">
-  <img width="460" src="https://miro.medium.com/max/4800/1*nLFpCEBm5zmKR4Bvm5bi5w.png" title="HotelSeekers Figma" alt="HotelSeekers Figma"/>
-</a>
+<p align="center">
+  <a href="https://www.figma.com/file/EBiIGRkfc9RZ8GmDlOPVD6/Hotel-Seeker-Mobile-Apps?node-id=0%3A1">
+    <img width="460" src="https://miro.medium.com/max/4800/1*nLFpCEBm5zmKR4Bvm5bi5w.png" title="HotelSeekers Figma" alt="HotelSeekers Figma"/>
+  </a>
+</p>
 
 ## Support
 
