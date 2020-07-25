@@ -64,12 +64,12 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     public void redirect(){
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), OnBoardActivity.class)); //Status redirect temporary
         finish();
     }
 
     public void termredirect(){
-        startActivity(new Intent(getApplicationContext(), TermPrivacyActivity.class));
+        startActivity(new Intent(getApplicationContext(), OnBoardActivity.class)); //Status redirect temporary
         finish();
     }
 }
