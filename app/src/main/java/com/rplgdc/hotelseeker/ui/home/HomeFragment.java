@@ -91,15 +91,6 @@ public class HomeFragment extends Fragment {
                 startActivity(searchIntent);
             }
         });
-
-        loginButton = view.findViewById(R.id.login_button);
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent searchIntent = new Intent(getActivity(), SearchActivity.class);
-                startActivity(searchIntent);
-            }
-        });
 //
         return view;
     }
