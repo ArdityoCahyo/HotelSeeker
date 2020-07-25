@@ -1,87 +1,37 @@
 package com.rplgdc.hotelseeker;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.Toast;
+import android.widget.TextView;
 
-import com.firebase.ui.auth.AuthUI;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Collections;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private EditText NIM, Nama, Jurusan;
-    private FirebaseAuth auth;
-    private Button Logout, Simpan, Login, ShowData;
+public class LoginActivity extends AppCompatActivity {
 
-    private int RC_SIGN_IN = 1;
+    private TextView registerText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Login = findViewById(R.id.authGoogle);
-        Login.setOnClickListener(this);
+        registerText = findViewById(R.id.registerText);
 
-        auth = FirebaseAuth.getInstance();
-
-        if(auth.getCurrentUser() == null){
-            redirect();
-        }else{
-            termredirect();
-        }
-    }
-
-
-    private boolean isEmpty(String s){
-        return TextUtils.isEmpty(s);
-    }
-
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == RC_SIGN_IN) {
-
-            if (resultCode == RESULT_OK) {
-                Toast.makeText(LoginActivity.this, "Login Berhasil", Toast.LENGTH_SHORT).show();
-                redirect();
-            }else {
-                Toast.makeText(LoginActivity.this, "Login Dibatalkan", Toast.LENGTH_SHORT).show();
+        registerText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                redirectRegister();
             }
-        }
+        });
     }
 
-    @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.authGoogle) {
-            startActivityForResult(AuthUI.getInstance()
-                            .createSignInIntentBuilder()
-
-                            .setAvailableProviders(Collections.singletonList(new AuthUI.IdpConfig.GoogleBuilder().build()))
-                            .setIsSmartLockEnabled(false)
-                            .build(),
-                    RC_SIGN_IN);
-        }
-    }
-
-    public void redirect(){
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+    private void redirectRegister(){
+        startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
         finish();
     }
 
-    public void termredirect(){
-        startActivity(new Intent(getApplicationContext(), TermPrivacyActivity.class));
-        finish();
-    }
 }
