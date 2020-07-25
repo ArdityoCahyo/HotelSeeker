@@ -6,4 +6,6 @@
     <color name="colorBackground">#F5F5F5</color>
     <color name="destination_button">#EBECEE</color>
     <color name="star">#FFC107</color>
+    <color name="black">#272727</color>
+    <color name="line">#808080</color>
 </resources>
