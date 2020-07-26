@@ -42,10 +42,11 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     private void GetData(){
-        Toast.makeText(getApplicationContext(),"Mohon Tunggu Sebentar...", Toast.LENGTH_LONG).show();
+//        Toast.makeText(getApplicationContext(),"Mohon Tunggu Sebentar...", Toast.LENGTH_LONG).show();
         reference = FirebaseDatabase.getInstance().getReference();
-        reference.child("hotel").child(auth.getUid()).child("bandung")
-//        reference.child("hotel").child("bandung")
+//        reference.child("hotel").child(auth.getUid()).child("bandung")
+        reference.child("hotel").child("bandung")
+//        reference.child("hotel")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
