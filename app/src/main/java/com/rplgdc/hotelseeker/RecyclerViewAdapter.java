@@ -82,9 +82,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public int DiscCalc(int PriceHotel, int PriceHotelDisc){
-        int p1 = PriceHotel;
-        int p2 = PriceHotelDisc;
-        int Total = (p1/p2) * 100;
+        int Total = (PriceHotelDisc/PriceHotel) * 100;
         return Total;
     }
 
