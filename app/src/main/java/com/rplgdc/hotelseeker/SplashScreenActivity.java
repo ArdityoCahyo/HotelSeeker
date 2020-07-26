@@ -42,13 +42,14 @@ public class SplashScreenActivity extends AppCompatActivity {
                 }
                 else
                 {
+                    noInternet();
                     Toast.makeText(SplashScreenActivity.this,"No Internet Connection",Toast.LENGTH_SHORT).show();
                 }
             }
         }, 3000L);
     }
 
-    public void saveData(){
+    private void saveData(){
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
@@ -56,20 +57,25 @@ public class SplashScreenActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    public String loadData(){
+    private String loadData(){
         final SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
 
         loadStatus = sharedPreferences.getString(status, "");
         return loadStatus;
     }
 
-    public void redirect(){
+    private void redirect(){
         startActivity(new Intent(getApplicationContext(), OnBoardActivity.class)); //Status redirect temporary
         finish();
     }
 
-    public void termredirect(){
+    private void termredirect(){
         startActivity(new Intent(getApplicationContext(), OnBoardActivity.class)); //Status redirect temporary
+        finish();
+    }
+
+    private void noInternet(){
+        startActivity(new Intent(getApplicationContext(), NoInternetActivity.class)); //Status redirect temporary
         finish();
     }
 }
