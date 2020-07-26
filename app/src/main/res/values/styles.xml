@@ -14,6 +14,19 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="AppThemeAlternate" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryAlternate</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAlternate</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="AppThemeAlternate.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
     <style name="SplashScreenTheme">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
