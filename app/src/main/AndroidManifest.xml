@@ -21,20 +21,22 @@
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".NoInternetActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeAlternate.NoActionBar"/>
-        <activity android:name=".OnBoardActivity"
+            android:theme="@style/AppThemeAlternate.NoActionBar" />
+        <activity
+            android:name=".OnBoardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeAlternate.NoActionBar" />
         <activity
             android:name=".RegisterActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeAlternate"/>
+            android:theme="@style/AppThemeAlternate" />
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="portrait"
@@ -49,13 +51,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SearchActivity"
-            android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppThemeAlternate.NoActionBar" />
         <activity
             android:name=".RoomActivity"
-            android:label="@string/app_name"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAlternate"/>
     </application>
 
 </manifest>
