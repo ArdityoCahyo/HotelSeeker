@@ -38,13 +38,17 @@ public class RoomActivity extends AppCompatActivity {
 //        sumLayout = (LinearLayout) findViewById(R.id.sum);
 
         setTitle("Rooms and Guests");
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final TextView textSumRoom = (TextView) findViewById(R.id.sumRooms);
-        sumRoom = Integer.parseInt(textSumRoom.getText().toString());
-
         final TextView textSumGuest = (TextView) findViewById(R.id.sumGuests);
+
+        roomPlus = (Button) findViewById(R.id.roomPlus);
+        roomMin = (Button) findViewById(R.id.roomMin);
+        guestPlus = (Button) findViewById(R.id.guestsPlus);
+        guestMin = (Button) findViewById(R.id.guestsMin);
+
+        sumRoom = Integer.parseInt(textSumRoom.getText().toString());
         sumGuest = Integer.parseInt(textSumGuest.getText().toString());
 
         if (sumRoom == min){
@@ -54,8 +58,6 @@ public class RoomActivity extends AppCompatActivity {
             guestMin.setEnabled(false);
         }
 
-        roomPlus = (Button) findViewById(R.id.roomPlus);
-
         TypedValue typedValueRoom = new TypedValue();
         getTheme().resolveAttribute(R.attr.colorPrimary, typedValueRoom, true);
         final int colorPrimary = typedValueRoom.data;
@@ -64,6 +66,12 @@ public class RoomActivity extends AppCompatActivity {
         buttonDrawableRoom = DrawableCompat.wrap(buttonDrawableRoom);
         DrawableCompat.setTint(buttonDrawableRoom, colorPrimary);
         roomPlus.setBackground(buttonDrawableRoom);
+
+        Drawable buttonDrawableGuests = guestPlus.getBackground();
+        buttonDrawableGuests = DrawableCompat.wrap(buttonDrawableGuests);
+        DrawableCompat.setTint(buttonDrawableGuests, colorPrimary);
+        guestPlus.setBackground(buttonDrawableGuests);
+
 
         roomPlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,7 +104,6 @@ public class RoomActivity extends AppCompatActivity {
             }
         });
 
-        roomMin = (Button) findViewById(R.id.roomMin);
         roomMin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -119,13 +126,6 @@ public class RoomActivity extends AppCompatActivity {
                 textSumRoom.setText(String.valueOf(sumRoom));
             }
         });
-
-        guestPlus = (Button) findViewById(R.id.guestsPlus);
-
-        Drawable buttonDrawableGuests = guestPlus.getBackground();
-        buttonDrawableGuests = DrawableCompat.wrap(buttonDrawableGuests);
-        DrawableCompat.setTint(buttonDrawableGuests, colorPrimary);
-        guestPlus.setBackground(buttonDrawableGuests);
 
         guestPlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -158,7 +158,6 @@ public class RoomActivity extends AppCompatActivity {
             }
         });
 
-        guestMin = (Button) findViewById(R.id.guestsMin);
         guestMin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

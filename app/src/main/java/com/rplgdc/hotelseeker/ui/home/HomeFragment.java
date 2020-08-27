@@ -2,6 +2,7 @@ package com.rplgdc.hotelseeker.ui.home;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Region;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +22,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.rplgdc.hotelseeker.LoginActivity;
 import com.rplgdc.hotelseeker.MainActivity;
 import com.rplgdc.hotelseeker.R;
+import com.rplgdc.hotelseeker.RegionActivity;
 import com.rplgdc.hotelseeker.RoomActivity;
 import com.rplgdc.hotelseeker.SearchActivity;
 
@@ -34,7 +36,7 @@ public class HomeFragment extends Fragment {
     private LinearLayout datePicker;
     private LinearLayout roomPicker;
     private Button searchButton;
-    private Button loginButton;
+    private TextView destinationButton;
 
     private String textDate1;
     private String textDate2;
@@ -91,7 +93,16 @@ public class HomeFragment extends Fragment {
                 startActivity(searchIntent);
             }
         });
-//
+
+        destinationButton = view.findViewById(R.id.destination_button);
+        destinationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent searchIntent = new Intent(getActivity(), RegionActivity.class);
+                startActivity(searchIntent);
+            }
+        });
+
         return view;
     }
 
