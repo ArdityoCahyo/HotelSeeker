@@ -141,7 +141,6 @@ public class OnBoardActivity extends AppCompatActivity implements GoogleApiClien
         firebaseAuth.addAuthStateListener(authStateListener);
     }
 
-    //Saat Aktifitas dihentikan, maka listener akan dihapus
     @Override
     protected void onStop() {
         super.onStop();
@@ -153,7 +152,6 @@ public class OnBoardActivity extends AppCompatActivity implements GoogleApiClien
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        // Mendapatkan Akses untuk SignIn/Masuk Jika permintaan dari Firebase Autentifikasi Terpenuhi
         if (requestCode == RC_SIGN_ID) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             if(result.isSuccess()){

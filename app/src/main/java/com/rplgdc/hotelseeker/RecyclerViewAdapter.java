@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>{
 
-
     private ArrayList<HotelData> listHotel;
     private Context context;
 

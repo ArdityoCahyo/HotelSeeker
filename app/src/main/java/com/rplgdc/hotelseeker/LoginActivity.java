@@ -24,7 +24,6 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         registerText = findViewById(R.id.registerText);
-
         registerText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

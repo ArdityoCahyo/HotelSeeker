@@ -45,7 +45,7 @@ public class SearchActivity extends AppCompatActivity {
 //        Toast.makeText(getApplicationContext(),"Mohon Tunggu Sebentar...", Toast.LENGTH_LONG).show();
         reference = FirebaseDatabase.getInstance().getReference();
 //        reference.child("hotel").child(auth.getUid()).child("bandung")
-        reference.child("hotel").child("bandung")
+        reference.child("hotel").child("x8Jset2TiEWbzWnDJwls")
 //        reference.child("hotel")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
