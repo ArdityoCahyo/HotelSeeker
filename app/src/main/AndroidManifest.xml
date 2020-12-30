@@ -13,6 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".BookingActivity" />
         <activity
             android:name=".SplashScreenActivity"
             android:noHistory="true"
@@ -59,7 +61,11 @@
         <activity
             android:name=".RegionActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeAlternate"/>
+            android:theme="@style/AppThemeAlternate" />
+        <activity
+            android:name=".HotelInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAlternate.NoActionBar" />
     </application>
 
 </manifest>

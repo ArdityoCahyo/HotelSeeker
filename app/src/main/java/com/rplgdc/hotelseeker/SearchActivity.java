@@ -1,7 +1,11 @@
 package com.rplgdc.hotelseeker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,6 +43,14 @@ public class SearchActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         MyRecyclerView();
         GetData();
+
+        TextView des = findViewById(R.id.destination_button);
+        des.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectHotelInfo();
+            }
+        });
     }
 
     private void GetData(){
@@ -79,5 +91,10 @@ public class SearchActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
+    }
+
+    private void redirectHotelInfo(){
+        startActivity(new Intent(getApplicationContext(), HotelInfoActivity.class));
+        finish();
     }
 }

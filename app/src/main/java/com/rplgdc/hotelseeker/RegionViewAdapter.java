@@ -47,13 +47,13 @@ public class RegionViewAdapter extends RecyclerView.Adapter<RegionViewAdapter.Vi
 
         holder.nameRegion.setText(""+nameRegion);
 
-        holder.ListRegionItem.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-
-                return false;
-            }
-        });
+//        holder.ListRegionItem.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View v) {
+//
+//                return false;
+//            }
+//        });
     }
 
     @Override
